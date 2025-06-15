@@ -9,5 +9,9 @@ JavaScript is a versatile, dynamically typed programming language used for inter
 ### 2. Setup
 
 1. Install web browswer (let's us view website)
-   ![Google-chrome](Google-chrome.jpeg)
+
+   
+   ![Google-chrome](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrGIPm65V0t_yE37GL3uGbY5dlKKOtGfi-xA&s)
+
+2. 
    
