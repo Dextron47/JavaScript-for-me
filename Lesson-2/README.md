@@ -5,7 +5,7 @@
 Numbers are a **primitive data type** in JavaScript.  
 They can be **integer or floating-point** (with decimal points), and JavaScript doesn’t distinguish between the two — it's all `Number`.
 
-✅ Numbers can be integer or decimal (floating) in      JavaScript.
+✅ Numbers can be integer or decimal (floating) in JavaScript.
 ✅ Operations like +, -, *, /, %, ** are supported.
 ✅ The Math object lets you perform advanced operations.
 ✅ Parsing methods (parseInt, parseFloat, Number) help you convert strings into numbers.
@@ -56,7 +56,7 @@ You can perform all the common mathematical operations in JavaScript:
 ```javascript
 10 % 3; // 1
 ```
-✅ Exponentiation ()**
+✅ Exponentiation (**)
 
 ```javascript
 2 ** 3; // 8
