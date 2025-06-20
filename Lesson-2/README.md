@@ -113,11 +113,12 @@ Step-by-step:
 
 JavaScript follows these rules when evaluating expressions:
 
-Priority |	Operation Type                          | Example
-1        |	Brackets ()                             | (a + b)
-2        |	Exponentiation **                       | 2 ** 3
-3	     |  Multiplication *, Division /, Modulo %	| a * b / c
-4	     |  Addition +, Subtraction -	            | a + b - c
+|Priority |	Operation Type                          | Example|
+|---|---|---|
+|1        |	Brackets ()                             | (a + b)|
+|2        |	Exponentiation **                       | 2 ** 3|
+|3	     |  Multiplication *, Division /, Modulo %	| a * b / c|
+|4	     |  Addition +, Subtraction -	            | a + b - c|
 
 Use parentheses () to control and clarify the order of operations!
 
