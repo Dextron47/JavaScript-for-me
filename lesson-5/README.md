@@ -132,16 +132,25 @@ pi = 3.14159; // ❌ Error
 Mark these as ✅ Valid or ❌ Invalid:
 
 1️⃣ let 123age = 20;
+
 2️⃣ let $price = 99;
+
 3️⃣ let return = 5;
+
 4️⃣ const user = "Jane"; user = "Jake";
+
 5️⃣ let name = "Bob";
 
 ✅ Answers:
+
 1️⃣ ❌
+
 2️⃣ ✅
+
 3️⃣ ❌
+
 4️⃣ ❌
+
 5️⃣ ✅
 
 ## Naming convention
