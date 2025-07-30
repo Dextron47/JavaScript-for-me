@@ -160,3 +160,124 @@ Mark these as ✅ Valid or ❌ Invalid:
 |PascalCase|    CartQuantity|
 |underscore(snake_case)|     cart_quantity|
 |kebab-case|     cart-quantity // not recommended in JavaScript|
+
+## Difference between var, let and const
+
+JavaScript provides three ways to declare variables:  
+👉 `var` (old)  
+👉 `let` (modern)  
+👉 `const` (for constants)
+
+Understanding their differences is key to writing safe and predictable code.
+
+### ✅ 1. Scope
+
+| Keyword | Scope          |
+|---------|----------------|
+| `var`   | Function scope |
+| `let`   | Block scope    |
+| `const` | Block scope    |
+
+```javascript
+function testVar() {
+  if (true) {
+    var a = 10;
+  }
+  console.log(a); // ✅ Works (function-scoped)
+}
+
+function testLet() {
+  if (true) {
+    let b = 20;
+  }
+  console.log(b); // ❌ Error (block-scoped)
+}
+```
+
+### ✅ 2. Reassigning Values
+Keyword	Can Reassign?
+
+var	✅ Yes
+
+let	✅ Yes
+
+const	❌ No
+```javascript
+let x = 5;
+x = 10; // ✅ Allowed
+const y = 3.14;
+y = 2.71; // ❌ Error: Assignment to constant variable
+```
+
+### ✅ 3. Redeclaring Variables
+Keyword	Redeclaration Allowed?
+
+var	✅ Yes
+
+let	❌ No
+
+const	❌ No
+
+```javascript
+var score = 100;
+var score = 200; // ✅ Allowed
+
+let count = 10;
+// let count = 20; // ❌ Error
+
+const pi = 3.14;
+// const pi = 3.1415; // ❌ Error
+```
+
+### ✅ 4. Hoisting
+All three are hoisted to the top of their scope, but only var is initialized as undefined.
+
+```javascript
+console.log(a); // undefined (var is hoisted)
+var a = 5;
+
+console.log(b); // ❌ ReferenceError
+let b = 10;
+
+console.log(c); // ❌ ReferenceError
+const c = 15;
+```
+
+You can learn hoisting in another lesson(named hoisting.md)file in detail.
+
+### 🔸 Summary Table
+|Feature|	var|	let|	const|
+|-------|------|-------|---------|
+|Scope	|Function	|Block	|Block|
+|Reassignable|	✅ Yes|	✅ Yes|	❌ No|
+|Redeclarable|	✅ Yes|	❌ No|	❌ No|
+|Hoisted|	✅ Yes (as undefined)|	✅ No|	✅ No|
+|Use in modern JS|	❌ Avoid|	✅ Preferred|	✅ For constants|
+
+### 🔸 When to Use What?
+Use let for variables that will change
+
+Use const for constants or values that won’t change
+
+Avoid using var unless maintaining legacy code
+
+### 🔸 Practice (Optional)
+
+1️⃣ Which keyword allows reassignment but not redeclaration?
+
+2️⃣ What’s the output?
+
+```javascript
+console.log(name);
+let name = "Alex";
+```
+✅ Answers:
+
+1️⃣ let
+
+2️⃣ ReferenceError: Cannot access 'name' before initialization
+
+
+---
+
+
